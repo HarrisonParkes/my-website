@@ -1,0 +1,88 @@
+img {
+  max-width: 100%;
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-header .mdl-layout__header-row {
+  padding: 0;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.site-description {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.is-compact .mdl-layout__title span {
+  display: none;
+}
+
+.site-logo-row {
+  min-height: 200px;
+}
+
+.is-compact .site-logo-row {
+  min-height: auto;
+}
+
+.site-logo {
+  background: url(../img/logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+  margin: 15px auto;
+}
+
+.is-compact .site-logo {
+  height: 50px;
+  width: 50px;
+  margin: 7px auto;
+}
+}
+
+
+}
+
+.site-navigation-row .mdl-navigation__link:hover {
+  opacity: 1;
+}
+
+.mdl-layout__header .mdl-layout__drawer-button {
+  color: #fff;
+}
+
+.mdl-layout__content {
+  background-color: #fefefe;
+    text-align: center
+}
+
+.site-content {
+  margin: 1em auto;
+  min-height: 580px;
+}
+
+.page-content {
+  padding-bottom: 2em;
+}
+
+
+
+.site-copy {
+  max-width: 700px;
+}
+
+.welcome-card > .mdl-card__title {
+  color: #fff;
+  height: 290px;
+  background: url("../img/headerimg.png") center/cover;
+.section__play-btn .material-icons {
+  font-size: 3rem;
+}
+
