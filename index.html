@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
         <div class="mdl-layout__header-row site-logo-row"><span class="mdl-layout__title">
             <div class="site-logo"></div><span class="site-description">Welcome To My Website</span></span></div>
         <div class="mdl-layout__header-row site-navigation-row mdl-layout--large-screen-only">
-          <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font"><a class="mdl-navigation__link" href="index.html">Home</a><a class="mdl-navigation__link" href="portfolio.html">Portfolio</a><a class="mdl-navigation__link" href="about.html">About</a><a class="mdl-navigation__link" href="contact.html">Contact</a>
+          <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font"><a class="mdl-navigation__link" href="index.html">Home</a><a class="mdl-navigation__link" href="portfolio.html">Portfolio</a><a class="mdl-navigation__link" href="about.html">About</a><a class="mdl-navigation__link" href="css">Contact</a>
           </nav>
         </div>
       </header>
@@ -79,83 +79,117 @@
 </section>
               
    
-    <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-   
-
-            <p>
-                <xmp>Different implementation styles of CSS
+              
+              
+  
+        
+    <body>
+      <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h2 class="center"><a href="css"></a>Different implementation styles of CSS</h2>
+          
+          
+          </div>
+        <p>
+                
                     
    In this section I am going to assess different implementation styles for CSS. The different implementation styles in which I am going to talk about include: Internal Style Sheets, External Style sheets and Inline Style sheets.
 
-   INLINE CSS
-   With this technique the CSS code is written within the "<h1> < /h1>" tags of the HTML code. This is an attribute of the HTML. With this written directly within the headings it overwrites the Internal and External techniques. This way is quick to change the colours and formats of text, however every time you want to change a colour format you have to write it out again in the <h1> headings. Inline loses many of its advantages of style sheets because it mixes with the content with the presentation. 
+   <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h4 class="center"><a href="css"></a>Inline CSS</h4>
+              
+   With this technique the CSS code is written within the #&60;h1> #&60;/h1> tags of the HTML code. This is an attribute of the HTML. With this written directly within the headings it overwrites the Internal and External techniques. This way is quick to change the colours and formats of text, however every time you want to change a colour format you have to write it out again in the #&60;h1> headings. Inline loses many of its advantages of style sheets because it mixes with the content with the presentation. 
 
    Example: This example shows how to change the colour and right margin of a paragraph.
-   <p style="color: blue; margin- right: 25px;"> My name is John
+   #&60;p style="color: blue; margin- right: 25px;"> My name is John
    This would show the paragraph as:
    " My name is John"
        
        
        
-
-   Advantages of Inline
-       
-       
-   1. With Inline you don't need to create an external document (as you would if you were using external style sheet). As well as this you don't need to edit a new element in the head of your
+   <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>  Advantages of Inline </h6>
+              
+ 1. With Inline you don't need to create an external document (as you would if you were using external style sheet). As well as this you don't need to edit a new element in the head of your
    document (as you would with an internal style sheet). Inline are therefore very easy to add and can save a lot of time. 
    2. Testing- Web designers use inline style sheet when they are first working on a new project. This is because it is easier to scroll up in the source instead of changing the source file.
-   More importantly inline can be used to debug pages if there is an error and it is hard to fix.<br><br>
+   More importantly inline can be used to debug pages if there is an error and it is hard to fix.
 
    3. Loads Faster- This is a major benefit with Inline CSS as it has lower HTTP requests. This means that Internal CSS websites load much faster than External CSS websites.   
        
-
-   Disadvantages of Inline
+  
+              
+              <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>  Disadvantages of Inline</h6>
+       
+  
        
        
    1. Must be used on every Element-The Inline style must be used for every element you want it on so it can be much more time consuming if you are creating a large site. For example if you 
-   wanted all your headings to have a font of "Arial" you would have to add an inline < p> < /p> tag  in your documents. This will also add download time for the website user when they are 
+   wanted all your headings to have a font of "Arial" you would have to add an inline p> &#60;/p> tag  in your documents. This will also add download time for the website user when they are 
    opening the site. 
    2. Over writing External and Internal- Because Inline is the most specific in the cascade It means you could override your other style sheets such as external and internal even if you didn't 
-   intend to. This can therefore cause problems for the web developer.
+   intend to. This can therefore cause problems for the web developer.<br><br><br><br>
                     
+                    
+   <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h4 class="center"><a href="css"></a>Internal CSS</h4>
                     
    
-                    
-   INTERNAL CSS
    An Internal style sheet means the code is stored in the HTML section of the web page inside the head tag. This is much better than inline because any CSS used within the page will inherit the 
-   formatting e.g. if the font colour is red everything else will change. A bad point about this is if you have <h2> in a document you need repeat the code for every single page. With this style 
+   formatting e.g. if the font colour is red everything else will change. A bad point about this is if you have &#60;h2> in a document you need repeat the code for every single page. With this style 
    sheet it means that each HTML file the CSS code needed in order to style the page. This means that if you want to make a change to one page, it would have to be done to them all. 
    Example:
-   <head>
+   
+    &#60;head>
        hr {color: red;
-           p {margin-left:20px;}
-             </style>
-   </head>
+       p {margin-left:20px;}
+       #&60;/style>
+       #&60;/head>
                     
                     
                     
 
-   Advantages of Internal 
+         <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>  Advanatges of Internal</h6>
                     
                     
    1. Same style on every element- This means that Internal styles don't need to be applied to every element. If you want all your headings or paragraphs to have the family font "Arial" you would
-   have to add an Inline style <p> tag within your internal style document. This can benefit you if you want to keep all the fonts the same as you just need to do it once.
+   have to add an Inline style #&60;p> tag within your internal style document. This can benefit you if you want to keep all the fonts the same as you just need to do it once.
    2. Testing- Internal style sheets are a very useful tool for web developers as they allow you to test your styles in the context of your entire site without breaking any pages apart from the 
    one you are testing. 
                     
-
-   Disadvantages of Internal
+    <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>  Disadvantages of Internal</h6>
+   
                     
                     
    1. Slow Loading- One of the biggest disadvantages of Internal is that the web pages load very slowly. This is because there are less HTTP requests and are slower than External and Inline. 
    If you were making a website I would not recommend Internal as you site should load within 15 seconds to stop people from diverting from your site. 
    2. File Size- When the web developers are working, the page size increases. Although it is helpful for the developers when working offline, it can cause the site to load slowly when they are 
-   online.  
+   online.  <br><br><br><br>
+                    
 
                     
                     
-                    
-   EXTERNAL CSS
+            <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h4 class="center"><a href="css"></a>External CSS</h4>          
+   
    An external Style sheet is when the code (which is shown below) is in HTML and is put inside the head part of it which looks like this: <head>. The HTML code below links the CSS code from the 
    “stylesheet” page to the HTML. This way the HTML code and CSS are on separate pages and they are linked together via the code below. So every time you add a new webpage all the format and colour 
    etc. will be kept the same. This technique is much better than Inline and Internal because the two codes are not mixed together meaning they are easier to find and read.
@@ -167,9 +201,11 @@
                     
                     
                     
-
-   Advantages of External Style Sheets
-                    
+<div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>    Advantages of External Style Sheets</h6>
+   
                     
    1. File size is reduced- Because the styling text is within a different document it means that the file sizes of the pages will be reduced quite considerably. As well as this the content to- 
    code ratio is much greater, than if it was just simple HTML pages. This means the structure and content is much easier to read by the developers. 
@@ -181,11 +217,65 @@
    with and less confusing as the HTML is separated with the style sheet.
                     
 
-   Disadvantages of External Style Sheets
+   <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h6 class="center"><a href="css"></a>    Disadavanatges of External Style Sheets</h6>
                     
                                     
    1. If you have a small website it could be more complicated to use external style sheets because they can increase quite fast and if you have deleted web pages it can be confusing as you 
-   wouldn't know which style sheet is needed</xmp>
+   wouldn't know which style sheet is needed
+              <br><br><br><br><br>
+  
+              
+              
+              <div class="section no-pad-bot">
+                <div class="container">
+                    <div class="row center">       
+                        <img src="img/imgsplit2.jpg">
+                    </div> 
+                  </div>
+                    </div>
+              
+  
+              
+              
+              
+              
+              <div class="container">
+          <div class= "section">
+          <div  class="col s12 m4"  id="css">
+              <h2 class="center"><a href="css"></a>
+How a scripting language can improve functionality.</h2>              
+              
+              
+              
+              
+              
+              
+
+
+
+A scripting language is a tool, which is used to add functionality to other software. It is not as powerful as a full programming language and it is generally designed for simple tasks like creating interactive menus or searching databases.
+
+Client side scripting
+This is an essential part of HTML as it enables the scripting of web pages which then makes the web pages have different content/reactions depending on what the user inputs and other variables. Client side scripting is simply websites or web programs that execute on the client's computer/client side, which is for example on the client's web browser. Instead of executing on the web server. The script is mostly written in the HTML document of the website which makes it an embedded script however, it could be written in a separate file. Client side scripting simply works by transferring the source code of the web page from the web server it is stored onto the client’s web browser.
+
+Server side scripting
+Server side scripting is simply a scripting technique that customises the webpage for the user upon their request to the server. This is done by adding a script on a web server and this script creates a response specific to the user. This is written in languages such as server side JavaScript, Python, PHP and executes on the web server. 
+
+User experience
+Websites functionality can be improved with the use of scripting languages. Web designers improve the user experience of the website using scripting languages like JavaScript. JavaScript helps with interactivity and the fact that users only come in contact with the finished product/front-end part of the website, JavaScript will help improving the user’s experience. 
+ 
+Validation
+Validation is key when it comes to websites especially form validation for various reasons like the information not being correct. Scripting languages can be used in validation. The datatype of the information entered by the user can be detected using JavaScript and if the datatype is not allowed in the text box then there could be an alert. This ensures the data integrity which improves the validation. An example of this would be, client side scripting not enabling the user to type in and submit alphabet in the text box of phone number.
+
+     
+                    
+   
+ 
+
+            
                        
                        
        <div class="mdl-card__title">
@@ -199,11 +289,15 @@
 <section class="section--center mdl-grid site-max-width homepage-portfolio">
     <a class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio.html">View Portfolio</a>
 </section>
-
+           </div>
 <div class="homepage-footer">
   <section class="mdl-grid site-max-width">
       <div class="mdl-cell mdl-card mdl-cell--8-col mdl-cell--4-col-tablet  mdl-shadow--4dp portfolio-card">
         <div class="mdl-card__title">
             <h2 class="mdl-card__title-text">Testimonials</h2>
-     
-      
+          </div>
+      </div>
+    </section>
+                       </div>
+                    </div>
+                    
