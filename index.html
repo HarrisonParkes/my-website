@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+    <!--"My Website" will appear in the tab page-->
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,7 @@
   
   </head>
     
-    <!--navigation bar-->
+    <!--navigation bar with working anchors to each individual section-->
   <body id="top">
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--waterfall site-header">
@@ -28,10 +29,8 @@
           </nav>
         </div>
       </header>
-      <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font"><a class="mdl-navigation__link" href="css/">Home</a><a class="mdl-navigation__link" href="portfolio.html">Portfolio</a><a class="mdl-navigation__link" href="about.html">About</a><a class="mdl-navigation__link" href="contact.html">Contact</a>
-        </nav>
-      </div>
+    
+      <!--cover image with "welcome" message-->
       <main class="mdl-layout__content">
         <div class="site-content">
           <div class="container"><div class="mdl-grid site-max-width">
@@ -44,7 +43,6 @@
 </div>
 
               <!--poster1-->
-              
 <section class="section--center mdl-grid site-max-width" id="posters">
     <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
         <div class="mdl-card__media">
@@ -59,7 +57,6 @@
     </div>
     
     <!--poster2-->
-    
     <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
         <div class="mdl-card__media">
             <img class="article-image" src="img/poster2.jpg" border="0" alt="">
@@ -73,7 +70,6 @@
     </div>
     
     <!--poster3-->
-    
     <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
         <div class="mdl-card__media">
             <img class="article-image" src="img/poster3.jpg" border="0" alt="">
@@ -87,7 +83,7 @@
     </div>
 </section>
               
-        
+        <!--image to split the text up-->
               <div class="section no-pad-bot">
                 <div class="container">
                     <div class="row center">       
@@ -97,8 +93,7 @@
                 </div>
               
               
-  <!-- Different implementation styles of CSS -->
-        
+  <!-- Different implementation styles of CSS heading -->
     <body>
       <div class="container" id="css">
           <div class= "section">
@@ -111,7 +106,8 @@
                 
                     
    In this section I am going to assess different implementation styles for CSS. The different implementation styles in which I am going to talk about include: Internal Style Sheets, External Style sheets and Inline Style sheets.
-
+            
+<!--inline CSS sub heading-->
    <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -122,13 +118,14 @@
               
    With this technique the CSS code is written within the #&60;h1> #&60;/h1> tags of the HTML code. This is an attribute of the HTML. With this written directly within the headings it overwrites the Internal and External techniques. This way is quick to change the colours and formats of text, however every time you want to change a colour format you have to write it out again in the #&60;h1> headings. Inline loses many of its advantages of style sheets because it mixes with the content with the presentation. 
 
+<!--inline css example-->   
    Example: This example shows how to change the colour and right margin of a paragraph.
    #&60;p style="color: blue; margin- right: 25px;"> My name is John
    This would show the paragraph as:
    " My name is John"
        
        
-       
+<!--Advantages of inline-->
    <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -145,7 +142,7 @@
    3. Loads Faster- This is a major benefit with Inline CSS as it has lower HTTP requests. This means that Internal CSS websites load much faster than External CSS websites.   
        
   
-              
+  <!--disadvantages of inline-->            
               <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -163,7 +160,7 @@
    2. Over writing External and Internal- Because Inline is the most specific in the cascade It means you could override your other style sheets such as external and internal even if you didn't 
    intend to. This can therefore cause problems for the web developer.<br><br><br><br>
                     
-                    
+   <!--internal css sub heading-->                 
    <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -177,7 +174,9 @@
    An Internal style sheet means the code is stored in the HTML section of the web page inside the head tag. This is much better than inline because any CSS used within the page will inherit the 
    formatting e.g. if the font colour is red everything else will change. A bad point about this is if you have &#60;h2> in a document you need repeat the code for every single page. With this style 
    sheet it means that each HTML file the CSS code needed in order to style the page. This means that if you want to make a change to one page, it would have to be done to them all. 
-   Example:
+  
+<!--internal css example-->    
+        Example:
    
     &#60;head>
        hr {color: red;
@@ -187,7 +186,7 @@
                     
                     
                     
-
+<!--advantages of interanl-->
          <div class="container">
           <div class= "section">
           <div  class="col s12 m4" >
@@ -202,7 +201,8 @@
    have to add an Inline style #&60;p> tag within your internal style document. This can benefit you if you want to keep all the fonts the same as you just need to do it once.
    2. Testing- Internal style sheets are a very useful tool for web developers as they allow you to test your styles in the context of your entire site without breaking any pages apart from the 
    one you are testing. 
-                    
+       
+<!--disadvantages of interanl-->
     <div class="container">
           <div class= "section">>
               <h6 class="center">  Disadvantages of Internal</h6>
@@ -220,7 +220,7 @@
                     
 
                     
-                    
+ <!--external css sub heading-->                   
             <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -233,14 +233,15 @@
    An external Style sheet is when the code (which is shown below) is in HTML and is put inside the head part of it which looks like this: &#60;head>. The HTML code below links the CSS code from the 
    “stylesheet” page to the HTML. This way the HTML code and CSS are on separate pages and they are linked together via the code below. So every time you add a new webpage all the format and colour 
    etc. will be kept the same. This technique is much better than Inline and Internal because the two codes are not mixed together meaning they are easier to find and read.
-
+        
+<!--external css example-->    
    For example: 
    hr {color:blue;}
    p {margin-right:25px;}
    body (background-image:url("image.gif");}
                     
                     
-                    
+<!--advantages of external style sheets-->                   
 <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -260,7 +261,7 @@
    3. Because the style is separated from the HTML page and is put within a CSS style sheet it means that there is less code within the page but more importantly it makes it more easy to work 
    with and less confusing as the HTML is separated with the style sheet.
                     
-
+<!--disadvantages of external style sheets--> 
    <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -276,7 +277,7 @@
               <br><br><br><br><br>
   
               
-              
+  <!--image to split the text up-->
               <div class="section no-pad-bot">
                 <div class="container">
                     <div class="row center">       
@@ -289,7 +290,7 @@
               
               
               
- <!-- How a scripting language can improve functionality -->   
+ <!-- How a scripting language can improve functionality heading -->   
         
               <div class="container">
           <div class= "section">
@@ -303,6 +304,8 @@ How a scripting language can improve functionality.</h2>
               
 
  A scripting language is a tool, which is used to add functionality to other software. It is not as powerful as a full programming language and it is generally designed for simple tasks like creating interactive menus or searching databases.
+        
+        <!--client side sub heading-->  
   <div class="container">
           <div class= "section">
           <div  class="col s12 m4"  >
@@ -314,6 +317,8 @@ How a scripting language can improve functionality.</h2>
 
 This is an essential part of HTML as it enables the scripting of web pages which then makes the web pages have different content/reactions depending on what the user inputs and other variables. Client side scripting is simply websites or web programs that execute on the client's computer/client side, which is for example on the client's web browser. Instead of executing on the web server. The script is mostly written in the HTML document of the website which makes it an embedded script however, it could be written in a separate file. Client side scripting simply works by transferring the source code of the web page from the web server it is stored onto the client’s web browser.
 br><br><br>
+        
+        <!--server side sub heading-->  
 <div class="container">
           <div class= "section">
           <div  class="col s12 m4">
@@ -325,6 +330,8 @@ br><br><br>
 
 Server side scripting is simply a scripting technique that customises the webpage for the user upon their request to the server. This is done by adding a script on a web server and this script creates a response specific to the user. This is written in languages such as server side JavaScript, Python, PHP and executes on the web server. 
 <br><br><br>
+        
+        <!--user experience sub heading-->  
 <div class="container">
           <div class= "section">
           <div  class="col s12 m4">
@@ -338,7 +345,7 @@ Websites functionality can be improved with the use of scripting languages. Web 
     
               
    
-        
+ <!--validation sub heading-->       
         <div class="container">
           <div class= "section">
           <div  class="col s12 m4">
@@ -351,7 +358,7 @@ Validation is key when it comes to websites especially form validation for vario
               <br><br><br>
               
   
-        
+         <!--image to split the text up-->
               <div class="section no-pad-bot">
                 <div class="container">
                     <div class="row center">       
